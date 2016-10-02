@@ -3,6 +3,7 @@
 
     <!-- Strings related to login -->
     <string name="button_activity">Success! Choose Your Next Action</string>
+    <string name="successText">You have logged in successfully!</string>
     <string name="prompt_name">Name</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_enteremail">Enter email address to delete record</string>
@@ -14,7 +15,7 @@
     <string name="action_delete">Delete Details</string>
     <string name="action_edit">Update Details</string>
     <string name="action_list">List Details</string>
-    <string name="action_db">Interact With Database</string>
+    <string name="action_db">Add Details To Database</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>

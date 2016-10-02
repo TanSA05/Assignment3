@@ -39,7 +39,8 @@
             android:label="@string/title_activity_list" />
         <activity
             android:name=".UpdateActivity"
-            android:label="@string/title_activity_update"></activity>
+            android:label="@string/title_activity_update" />
+        <activity android:name=".SuccessActivity"></activity>
     </application>
 
 </manifest>

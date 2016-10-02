@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context="com.example.taneea.assignment3.DatabaseButtonActivity">
@@ -14,7 +15,8 @@
         android:textSize="24dp"
         android:layout_marginTop="100dp"
         android:layout_marginLeft="10dp"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite" />
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -56,4 +58,11 @@
         android:layout_margin="@dimen/fab_margin"
         android:src="@android:drawable/ic_menu_edit"/>
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/arrow_down_float"/>
 </android.support.design.widget.CoordinatorLayout>

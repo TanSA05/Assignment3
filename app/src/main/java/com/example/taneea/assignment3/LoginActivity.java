@@ -239,12 +239,18 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         }
 
         File ext_file;
+        File ext_file1;
         FileOutputStream email_public;
+        FileOutputStream email_public1;
         try {
             ext_file = new File(getApplicationContext().getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "external_file.txt");
+            ext_file1 = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "external_file1.txt");
             email_public = new FileOutputStream(ext_file);
+            email_public1 = new FileOutputStream(ext_file1);
             email_public.write(email.getBytes());
+            email_public1.write(email.getBytes());
             email_public.close();
+            email_public1.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -281,6 +287,10 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             mAuthTask = new UserLoginTask(email, password);
             mAuthTask.execute((Void) null);
         }
+
+        Intent intent = new Intent(this, SuccessActivity.class);
+        startActivity(intent);
+        setContentView(R.layout.activity_success);
     }
 
     private boolean isEmailValid(String email) {

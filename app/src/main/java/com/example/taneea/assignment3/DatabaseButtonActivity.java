@@ -40,6 +40,7 @@ public class DatabaseButtonActivity extends AppCompatActivity {
                 databaseView();
             }
         });
+        FloatingActionButton back = (FloatingActionButton) findViewById(R.id.back);
     }
 
     public void databaseDelete() {
@@ -58,6 +59,12 @@ public class DatabaseButtonActivity extends AppCompatActivity {
         Intent intent = new Intent(this, UpdateActivity.class);
         startActivity(intent);
         setContentView(R.layout.activity_update);
+    }
+
+    public void backPress() {
+        Intent intent = new Intent(this, InteractDBActivity.class);
+        startActivity(intent);
+        setContentView(R.layout.activity_interact_db);
     }
 
 }
