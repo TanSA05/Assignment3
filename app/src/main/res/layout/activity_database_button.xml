@@ -7,6 +7,15 @@
     android:fitsSystemWindows="true"
     tools:context="com.example.taneea.assignment3.DatabaseButtonActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_activity"
+        android:textSize="24dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="center"/>
+
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,7 +36,7 @@
         android:id="@+id/delete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
+        android:layout_gravity="right"
         android:layout_margin="@dimen/fab_margin"
         android:src="@android:drawable/ic_menu_delete"/>
 
@@ -35,7 +44,7 @@
         android:id="@+id/list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|left"
+        android:layout_gravity="center"
         android:layout_margin="@dimen/fab_margin"
         android:src="@android:drawable/ic_menu_view"/>
 
